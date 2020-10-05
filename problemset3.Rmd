@@ -1,6 +1,6 @@
 ---
-title: "ProblemSet3"
-author: "Lindsey Cathcart"
+title: "Problem Set 3"
+author: "Lindsey Cathcart and Rose Pfeiffer"
 date: "10/2/2020"
 output: html_document
 ---
