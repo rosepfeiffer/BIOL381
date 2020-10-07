@@ -3,12 +3,15 @@ title: "Problem Set 3"
 author: "Lindsey Cathcart and Rose Pfeiffer"
 date: "10/2/2020"
 output: html_document
+bibliography: ProblemSet3Bib.bib
+csl: apa.csl
+
 ---
 
-# Species of concern: *Procolossiana eunomia*
+# Species of concern: Bog Fritillary (*Procolossiana eunomia*)
 
 
-1. We chose to study this species due to concerns around its conservation. Like most other insects, this is a poorly studied species, although there are indications that loss of bog habitat vital to the growth of its host plants has negative consequences on the butterfly population (citation?). It has been observed to be absent from several areas from which it originally would have been found in, including Armenia (citation?). Specifically we are interested in the population dynamics in Belgium.
+1. We chose to study this species due to concerns around its conservation. Like most other insects, this is a poorly studied species. There are indications that loss of bog habitat vital to the growth of its host plants has negative consequences on the butterfly population [@Goffart2010]. Climate change is also thought to play a role as increased temperatures have various effects on life stages [@Radchuk2013]. The species has been observed to be absent from several areas from which it historically would have been found in, including Armenia [@Morgun2019]. Specifically, we are interested in the population dynamics in Belgium, as the population there is isolated from other Northern European populations due to lack of proper habitat between the populations [@Goffart2010].
 
 
 2. Which life stage should be considered most important in conservation?
