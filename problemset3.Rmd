@@ -76,7 +76,6 @@ the stable age distribution is the proportion of the population in each age or s
 
 easton's github: eastonwhite
 
-I messed up my branch so I'm just seeing if this will work.
 
 
 
