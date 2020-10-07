@@ -61,3 +61,33 @@ The stable age distribution shows us that the greatest losses are occurring in t
 how to interpret the stable age distribution values...?
 
 Increased temperature --> reduces overwintering survival, which is why the sensitivity is so high then...
+
+sensitivity vs elasticity
+sensitivity: how elements in vital rate (vital rate refers to survivorship at stage 1, fecundity at stage 2, etc) effect the population growth rate. which age/stage is most receptive to control?
+
+elasticity is a proportional change in vital rate
+
+both tell you how the change in rates (growth/fecundity/survival) affect the overall growth rate.  
+
+the stable age distribution is the proportion of the population in each age or stage class, and mathematically is represented by the right eigenvector. the distribution of the stages is stable, not the growth/decline of the population. the distribution
+
+easton's github: eastonwhite
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
