@@ -12,16 +12,16 @@ csl: apa.csl
 
 ##### 1. 
 We chose to study this species due to concerns around its conservation.
-Like most other insects, this is a poorly studied species. There are
+Like most other insects, the population dynamics of this species are poorly understood. However, there are
 indications that loss of bog habitat vital to the growth of its host
 plants has negative consequences on the butterfly population
-[@Goffart2010]. Climate change is also thought to play a role as increased
+[@Goffart2010]. Climate change is also thought to play a role on declining populations, as increased
 temperatures have various effects on life stages [@Radchuk2013]. The
 species has been observed to be absent from several areas from which it
-historically would have been found in, including Armenia [@Morgun2019].
+historically would have been found in [@Morgun2019].
 Specifically, we are interested in the population dynamics in Belgium, as
 the population there is isolated from other Northern European populations
-due to lack of proper habitat between the populations [@Goffart2010].
+due to lack of habitat that would allow for dispersal between them [@Goffart2010].
 
 
 ##### 2. 
@@ -29,7 +29,7 @@ due to lack of proper habitat between the populations [@Goffart2010].
 
 
 ##### 3.
-Calculate eigenvalue, stable age distribution, elasticity, and sensitivity. What does this tell you about the population?
+Calculate eigenvalue, stable age distribution, elasticity, and sensitivity. What do these tell you about the population?
 
 ```{r, echo=FALSE}
 
@@ -71,42 +71,27 @@ elasticities
 ```
 The eigen value (`r my_eigen$values[5]`) indicates that the population is declining as it is less than 1. 
 The stable age distribution (`r stable_age`), is the right eigen vector.
-It tells us that for the population to be stable, the majority of
-individuals should be in the 1st or 2nd life stages, egg and pre-diapausal
-larvae. Approximately 20% of individuals should be in the overwintering
+It tells us that for the distribution of ages in the population to be stable, the majority of
+individuals should be in the 1st or 2nd life stages (egg and pre-diapausal
+larvae). Approximately 20% of individuals should be in the overwintering
 larvae stage. Only about 1% of the population should be in the pupa and
-adult stages for the population to be stable. 
-The sensitivity matrix, shows us that the third life stage, overwintering
+adult stages for the population to be stable. At those frequencies, the distribution of ages in the population is stable.  
+The sensitivity matrix shows us that the third life stage, overwintering
 larvae, has the greatest sensitivity (`r sensitivities[4,3]`). This
 indicates that a small change to the survival rate at this stage would
-have the greatest impact on the population. The elasticities were equal
-for all life stages.
+have the greatest impact on the population. The elasticities for each vital rate were equal to 0.2, representing the proportional change in overall growth rate from changes in vital rates (such as fecundity or survivorship).
+
+
 
 ##### 4. 
-From the sensitivity calculation it is clear that implementing
+Based on the sensitivites calculated, it is clear that implementing
 conservation strategies at the overwintering larval stage would provide
-the greatest increase in population growth. 
+the greatest increase in population growth. That stage is very sensitive, so to increase the eigenvalue to be greater than 1, an increase in the survival at this life stage is necessary. These strategies may include rearing additional larvae under controlled climate and habitat restoration to assure a proper microclimate for overwintering.
 
 
-The stable age distribution shows us that the greatest losses are occurring in the 'overwintering larva: active' stage, where the observed survival probability was 0.025, but the stable age distribution shows that a survival probability of 0.19432 is needed to maintain a stable distribution.
 
 
-how to interpret the stable age distribution values...?
 
-Increased temperature --> reduces overwintering survival, which is why the sensitivity is so high then...
-
-
-## Notes
-sensitivity vs elasticity
-sensitivity: how elements in vital rate (vital rate refers to survivorship at stage 1, fecundity at stage 2, etc) effect the population growth rate. which age/stage is most receptive to control?
-
-elasticity is a proportional change in vital rate
-
-both tell you how the change in rates (growth/fecundity/survival) affect the overall growth rate.  
-
-the stable age distribution is the proportion of the population in each age or stage class, and mathematically is represented by the right eigenvector. the distribution of the stages is stable, not the growth/decline of the population. the distribution
-
-easton's github: eastonwhite
 
 ##### Works Cited
 
