@@ -84,7 +84,7 @@ have the greatest impact on the population. The elasticities for each vital rate
 
 
 ##### 4. 
-Based on the sensitivites calculated, it is clear that implementing
+Based on the sensitivities calculated, it is clear that implementing
 conservation strategies at the overwintering larval stage would provide
 the greatest increase in population growth. That stage is very sensitive, so to increase the eigenvalue to be greater than 1, an increase in the survival at this life stage is necessary. These strategies may include rearing additional larvae under controlled climate and habitat restoration to assure a proper microclimate for overwintering.
 
