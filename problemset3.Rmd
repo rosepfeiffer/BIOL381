@@ -2,10 +2,11 @@
 title: "Problem Set 3"
 author: "Lindsey Cathcart and Rose Pfeiffer"
 date: "10/2/2020"
-output: html_document
-bibliography: ProblemSet3Bib.bib
+output:
+  pdf_document: default
+  html_document: default
 csl: apa.csl
-
+bibliography: ProblemSet3Bib.bib
 ---
 
 # Species of concern: Bog Fritillary Butterfly (*Procolossiana eunomia*)
@@ -15,7 +16,7 @@ We chose to study this species due to concerns around its conservation.
 Like most other insects, the population dynamics of this species are poorly understood. However, there are
 indications that loss of bog habitat vital to the growth of its host
 plants has negative consequences on the butterfly population
-[@Goffart2010]. Climate change is also thought to play a role on declining populations, as increased
+[@Goffart2010]. (\textcolor{red}{Easton note: Very cool that you were able to include citations in the document.}) Climate change is also thought to play a role on declining populations, as increased
 temperatures have various effects on life stages [@Radchuk2013]. The
 species has been observed to be absent from several areas from which it
 historically would have been found in [@Morgun2019].
@@ -69,7 +70,7 @@ elasticities <- eigen.analysis(A)$elasticities
 elasticities
 
 ```
-The eigen value (`r my_eigen$values[5]`) indicates that the population is declining as it is less than 1. 
+The eigen value (`r round(as.numeric(my_eigen$values[5]),2)`) (\textcolor{red}{Easton note: Very cool that you used in-line code here. Also note that you can use commands like round() to further clean up the output.}) indicates that the population is declining as it is less than 1. 
 The stable age distribution (`r stable_age`), is the right eigen vector.
 It tells us that for the distribution of ages in the population to be stable, the majority of
 individuals should be in the 1st or 2nd life stages (egg and pre-diapausal
@@ -81,19 +82,19 @@ larvae, has the greatest sensitivity (`r sensitivities[4,3]`). This
 indicates that a small change to the survival rate at this stage would
 have the greatest impact on the population. The elasticities for each vital rate were equal to 0.2, representing the proportional change in overall growth rate from changes in vital rates (such as fecundity or survivorship).
 
-
+\textcolor{red}{Easton note: Really good job throughout this section at interpretating the calculations and what they mean biologically.}
 
 ##### 4. 
 Based on the sensitivities calculated, it is clear that implementing
 conservation strategies at the overwintering larval stage would provide
-the greatest increase in population growth. That stage is very sensitive, so to increase the eigenvalue to be greater than 1, an increase in the survival at this life stage is necessary. These strategies may include rearing additional larvae under controlled climate and habitat restoration to assure a proper microclimate for overwintering.
+the greatest increase in population growth. That stage is very sensitive, so to increase the eigenvalue to be greater than 1, an increase in the survival at this life stage is necessary \textcolor{red}{(Easton note: It would have been interesting to see exactly how much of an increase in this survival rate would have led to an eigenvalue greater than 1)}.  These strategies may include rearing additional larvae under controlled climate and habitat restoration to assure a proper microclimate for overwintering.
 
 
 
 
 
 
-##### Works Cited
+# References
 
 
 
