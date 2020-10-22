@@ -91,6 +91,7 @@ plot(out,ylab='N',xlab='time',las=1, xlim=c(0,10))
 #### Part B
 
 ##### 7. 
+Combined Social/Ecological Flow Diagram:
 ![Combined Flow Chart](Combined Flow Diagram.png)
 
 ##### 8.
@@ -219,3 +220,17 @@ legend('topright',legend = c('macroalgae','coral reef','turf algae','parrotfish'
 
 matplot(out[ , 1], out[ , 6], type = "l", xlab = "time", ylab = "Fraction that are conservationists",main = "Conservation opinion", lwd = 2,ylim=c(0,1),col=5)
 ```
+
+#### Part C.
+
+##### 11.
+  I think the model results lined up pretty well with my initial predictions. I originally thought of human impacts such as fishing and pollution would increase macroalgae and algal turf coverage. This is due to the increased  nutrient load and decreased numbers of fish consuming algae. The increases in algae would then decrease coral coverage. This prediction was supported by the combined model which showed that parrotfish and coral would decline and macroalgae would dominate.
+  
+##### 12.
+  The flow diagrams changed a lot during the course of the lessons, my original individual flow diagram was pretty simple, it had a little bit of a social aspect, but was mostly ecological. The pair flow chart was built off of my original and we added more description of the ecological components, as well as some additional social aspects like the human impacts on climate change. The third flow chart we built from the ecological model didn't include any of the original social components we had. When we teamed up with the social group, I was surprised by the parameters they added from their model, because other than fishing rate they were different from the social aspects we had in our pair flow diagram.
+  
+##### 13. 
+There are a few limitations of this model. One major limitation is that it is not accounting for climate change, which we had in our pair flow diagram. It seems like climate change would have some major effects on the parameter values over time in both the ecological and social models. Increasing temperature would likely affect the death rate of coral, d, and the degradation rate of coral, j. I think adding some parameter to account for this would make the model more accurate. I also think it might be worthwhile to add the human population to the model as the population size would affect the fishing rate.
+
+##### 14. 
+  I think working on the separate social and ecological models first was really helpful, especially with working on the ecological model first it was really interesting to see how much the model changed when human components were added. Though I was initially frustrated with the flow diagrams, in the end they were also really useful for understanding how the different components were affecting each other. I think it would be helpful to add a little more background information, because I struggled with making the individual flow diagram because I didn't know much about coral to begin with.
