@@ -1,0 +1,56 @@
+---
+title: "Pop Gen Activity"
+author: "Rose Pfeiffer"
+date: "11/6/2020"
+output: 
+  html_document: default
+  pdf_document: default
+---
+      
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Part 1.
+
+##### 1. What is the effect of population size (N) on the probability of extinction of A allele?
+
+As population size increases, the probability of extinction of the A allele will decrease. 
+
+##### 2. How does the initial frequency of the A allele affect the probability it will reach fixation?
+
+If the initial frequency of the A allele is very high it will increase the probability of the A allele reaching fixation.
+
+##### 3. Let's now study the combined effects of mutation and genetic drift. Modify the above code to include a probability, u, that if a small "a" allele is chosen, it will mutate to be a big A allele. How does this affect our findings in questions 1 and 2?
+
+Including a probability of mutation from allele a to A causes the probability of extinction for allele A to decrease drastically at all population sizes. Adding mutation will also increase the probability of fixation for allele A at all initial frequencies. 
+
+### Part 2.
+
+##### Key stats
+ Population established there 6000 years ago
+ 
+ Change in mean body weight from 220kg to 36kg
+ 
+ 5 year generation time, heritability of 0.5
+
+
+##### 1. What is the mean change in body weight per generation?
+$$6000 years/(5 years/generation) = 1200 generations$$
+$$36kg - 220 kg = -184kg$$
+$$-184kg/1200 generations = -0.153 kg/generation$$
+The mean change in body weight per generation is -0.153kg or -153g.
+
+##### 2. What is the mean change in body weight caused by selection (estimate S)?
+
+$$R=h^2S$$
+$$-0.153 = 0.5S$$
+$$S = -0.307$$
+The mean change in body weight caused by selection is -0.307kg.
+
+##### 3. What assumptions are we making in these calculations?
+
+We are making multiple assumptions in these calculations. One assumption is that the mean of the mean body weight is changing by the same amount every generation. We are also making the assumption that body mass is controlled only by genetics and not effected by environmental factors like resource availability.
+  
+
